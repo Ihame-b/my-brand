@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/admin.css" />
+
+    <script>
+      function showData() {
+ document.getElementById('displayname').innerHTML = 
+ document.getElementById("name").value;
+              
+ document.getElementById('displaydescription').innerHTML = 
+ document.getElementById("dicription").value;  
+
+ document.getElementById('displaydate').innerHTML = 
+ document.getElementById("date1").value;  
+
+ document.getElementById('displaypic').innerHTML = 
+ document.getElementById("myFile").value;  
+          
+      }
+    </script>
+
+
+  </head>
+  <body style="background-color: green;">
+    <!-- <div style="display: flex;"> </div> -->
+    <h2 class="logo1"><a href="#"><b>IHAME Trust </b></a><span>LTD</span></h2>
+
+      <nav>
+       
+        <ul>
+          <li><a href="/home.html">Home</a></li>
+          <li><a href="/about.html">About Me</a></li>
+          <li><a href="/skills.html">Skills</a></li>
+          <li><a href="/project.html">Projects</a></li>
+          <li><a href="/contact.html">Contact Us</a></li>
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/admin.html">Admin</a></li>
+          <li><a href="/login.html">Login</a></li>
+        </ul>
+        
+      </nav>
+
+      <br><br><br>
+      
+      <font face="Verdana" size="7" color="white">
+                       <h4 style="text-align: center;">Welcome to Admin Dashboard</h4> 
+                        </font>
+                        <!-- <hr style="text-align: center;" color="white" width="690"> -->
+
+      <section>
+     
+        <div class="first">
+          
+          <table id="myArticle">
+            <caption>Blogs List</caption>
+            <tr>
+              <th>Name of article</th>
+              <th>Description</th>
+              <th>Dates</th>
+              <th>Image</th>
+              <th>Action</th>
+            </tr>
+             <tr>
+              <td><span id='displaydata'></span></td>
+              <td><span id="displaydescription"></span></td>
+              <td><span id="displaydate"></span></td>
+              <td><span id="displaypic" style="height: 50px"></span></td>
+              <td>
+                <button>Edit</button>
+                <button>Delete</button>
+              </td>
+            </tr>  
+          </table>
+<br>
+          <table id="myArticle">
+            <caption>User's Table</caption>
+            <tr>
+              <th>Names</th>
+              <th>Email</th>
+              <th>Password</th>
+              
+            </tr>
+             <tr>
+              <td><span id=""></span></td>
+              <td><span id=""></span></td>
+              <td><span id=""></span></td>     
+            </tr>  
+          </table>
+
+          <div class="right">
+            <div class="contact-form">
+              <form action="">
+                <input
+                  type="text"
+                  id="name"
+                  class="input-field"
+                  placeholder="Article name"
+                />
+                <input
+                  type="text"
+                  id="dicription"
+                  class="input-field"
+                  placeholder="Article Description"
+                />
+                <input
+                  type="date"
+                  class="input-field"
+                  id="date1"
+                  placeholder="Enter your Message"
+                />
+                <input type="file" id="myFile" name="filename" />
+                <button
+                  type="button"
+                  class="btn-contact"
+                  onclick="showData()"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+       
+      </section>
+    </div>
+ 
+    <!-- <script src="/js/app.js"></script> -->
+  </div>
+  </body>
+</html>

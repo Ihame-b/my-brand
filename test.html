@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+  <meta charset="UTF-8">
+  <script>
+    function showData() {
+        document.getElementById('displaydata').innerHTML = 
+                    document.getElementById("txtInput").value;
+                    
+       document.getElementById('displayname').innerHTML = 
+                    document.getElementById("name").value;            
+    }
+  </script>
+
+  </head>
+<body>
+
+  <form>
+    <label><b>Enter Input</b></label>
+    <input type="text" id="txtInput">
+
+    <label><b>Enter name</b></label>
+    <input type="text"  id="name">
+  </form>
+
+  <input type="submit" onclick="showData();"><br/>
+  <label>Your input: </label>
+  <p><span id='displaydata'></span></p>
+  <label>Your name: </label>
+  <p><span id='displayname'></span></p>
+</body>
+</html>
