@@ -131,16 +131,6 @@ contact */
 	border: none;
 	cursor: pointer;
   }
-  
-  @media (max-width: 550px) {
-	.contact-form {
-	  width: 100%;
-	}
-	.input-field {
-	  width: 100%;
-	}
-  }
-
   /* blog */
   .blog {
 	color: var(--light);
@@ -178,7 +168,6 @@ contact */
   .blog-box {
 	width: 350px;
 	background-color: #6f7dfb;
-	/* border: 1px solid #070917; */
 	margin: 20px;
   }
   .blog-img {
@@ -211,25 +200,13 @@ contact */
 	text-overflow: ellipsis;
 	margin: 10px 0px;
   }
-  
-  @media (max-width: 1250px) {
-	.blog-box {
-	  width: 100%;
-	}
+
+  footer {
+	text-align: center;
+	padding: 3px;
+	background-color: DarkSalmon;
+	color: white;
   }
-  
-  @media (max-width: 1100px) {
-	.blog-box {
-	  width: 100%;
-	  display: block;
-	}
-  }
-  
-  @media (max-width: 550px) {
-	.blog-box {
-	  width: 100%;
-	  display: block;
-	}
-  }
+
   
   

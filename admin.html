@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="/css/admin.css" />
+    <link rel="stylesheet" href="/css/style.css">
 
     <script>
+
       function showData() {
  document.getElementById('displayname').innerHTML = 
  document.getElementById("name").value;
@@ -24,14 +26,14 @@
       }
     </script>
 
-
   </head>
+
   <body style="background-color: green;">
     <!-- <div style="display: flex;"> </div> -->
-    <h2 class="logo1"><a href="#"><b>IHAME Trust </b></a><span>LTD</span></h2>
+    
 
       <nav>
-       
+        <h2 class="logo1"><a href="#"><b>IHAME Trust </b></a><span>LTD</span></h2>
         <ul>
           <li><a href="/home.html">Home</a></li>
           <li><a href="/about.html">About Me</a></li>
@@ -44,55 +46,12 @@
         </ul>
         
       </nav>
-
-      <br><br><br>
       
       <font face="Verdana" size="7" color="white">
                        <h4 style="text-align: center;">Welcome to Admin Dashboard</h4> 
                         </font>
-                        <!-- <hr style="text-align: center;" color="white" width="690"> -->
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>     
 
-      <section>
-     
-        <div class="first">
-          
-          <table id="myArticle">
-            <caption>Blogs List</caption>
-            <tr>
-              <th>Name of article</th>
-              <th>Description</th>
-              <th>Dates</th>
-              <th>Image</th>
-              <th>Action</th>
-            </tr>
-             <tr>
-              <td><span id='displaydata'></span></td>
-              <td><span id="displaydescription"></span></td>
-              <td><span id="displaydate"></span></td>
-              <td><span id="displaypic" style="height: 50px"></span></td>
-              <td>
-                <button>Edit</button>
-                <button>Delete</button>
-              </td>
-            </tr>  
-          </table>
-<br>
-          <table id="myArticle">
-            <caption>User's Table</caption>
-            <tr>
-              <th>Names</th>
-              <th>Email</th>
-              <th>Password</th>
-              
-            </tr>
-             <tr>
-              <td><span id=""></span></td>
-              <td><span id=""></span></td>
-              <td><span id=""></span></td>     
-            </tr>  
-          </table>
-
-          <div class="right">
             <div class="contact-form">
               <form action="">
                 <input
@@ -119,16 +78,65 @@
                   class="btn-contact"
                   onclick="showData()"
                 >
-                  Submit
+                Add Article
                 </button>
               </form>
             </div>
-          </div>
-       
-      </section>
-    </div>
- 
-    <!-- <script src="/js/app.js"></script> -->
-  </div>
+
+     
+              <table class="styled-table">
+                <thead>
+                  <caption>Blogs List</caption>
+                  <tr>
+                    <th>Name of article</th>
+                    <th>Description</th>
+                    <th>Dates</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="active-row">
+                    <td><h4 id='displaydata'>kj</h4></td>
+                    <td><h4 id="displaydescription">kj</h4></td>
+                    <td><h4 id="displaydate">kj</h4></td>
+                    <td><a id="displaypic" href="" style="height: 50px">kj</a></td>
+                    <td>
+                      <button>Edit</button>
+                      <button>Delete</button>
+                    </td>
+                  </tr>      
+                 
+                </tbody>
+            </table>
+
+            <table class="styled-table">
+              <thead>
+                <caption>User's List</caption>
+                <tr>
+                  <th>Names</th>
+                  <th>Email</th>
+                  <th>Password</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="active-row">
+                  <td><h4 id=''>kj</h4></td>
+                  <td><h4 id="">kj</h4></td>
+                  <td><h4 id="">kj</h4></td>
+                 
+                  <td>
+                    <button>Edit</button>
+                    <button>Delete</button>
+                  </td>
+                </tr>      
+               
+              </tbody></table>
+           
+              <footer>
+                <p>Author: Hege Refsnes<br>
+                <a href="mailto:hege@example.com">hege@example.com</a></p>
+              </footer> 
   </body>
 </html>
