@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script>
+
+      function showData() {
+ document.getElementById('displayname').innerHTML = 
+ document.getElementById("name").value;
+              
+ document.getElementById('displaydescription').innerHTML = 
+ document.getElementById("dicription").value;  
+
+ document.getElementById('displaydate').innerHTML = 
+ document.getElementById("date1").value;  
+
+ document.getElementById('displaypic').innerHTML = 
+ document.getElementById("myFile").value;  
+          
+      }
+    </script>
+
+  </head>
+
+  <body style="background-color: #191d2b;">
+      
+    <h4 style="text-align: center;">Welcome to Admin Dashboard</h4> 
+                        
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>     
+     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
+            <div class="contact-form">
+
+              <div>
+                <a class="btn-contact" type="button" href="/index.html">Home</a>
+              </div>
+
+              <form action="">
+                <input type="text" id="name" class="input-field" placeholder="Article name" />
+                <input type="text" id="dicription" class="input-field" placeholder="Article Description" />
+                <input type="date" class="input-field" id="date1" placeholder="Enter your Message" />
+                <input type="file" id="myFile" name="filename" />
+                <button type="button" class="btn-contact" onclick="showData()">
+                Add Article
+                </button>
+              </form>
+            </div>
+     
+  </body>
+</html>
